@@ -1,214 +1,265 @@
 body {
-    font-family: "Lato", sans-serif;
-    padding: 0;
-    margin: 0;
+  font-family: "Lato", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 nav {
-    background-color: #111;
-    color: white;
-    padding: 20px 50px;
+  background-color: #111;
+  color: white;
+  padding: 20px 50px;
 }
 
 .navTop {
-    display: flex;
-    align-items: center;
-    justify-content: space-between
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .search {
-    display: flex;
-    align-items: center;
-    background-color: gray;
-    padding: 10px 20px;
-    border-radius: 10px;
+  display: flex;
+  align-items: center;
+  background-color: gray;
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 
 .searchInput {
-    border: none;
-    background-color: transparent;
+  border: none;
+  background-color: transparent;
 }
 
 .searchInput::placeholder {
-    color: lightgray;
+  color: lightgray;
 }
 
 .limitedOffer {
-    font-size: 20px;
-    border-bottom: 2px solid green;
-    cursor: pointer;
+  font-size: 20px;
+  border-bottom: 2px solid green;
+  cursor: pointer;
 }
 
 .navBottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menuItem {
-    margin-right: 50px;
-    cursor: pointer;
-    color: lightgray;
-    font-weight: 400;
+  margin-right: 50px;
+  cursor: pointer;
+  color: lightgray;
+  font-weight: 400;
 }
 
 .slider {
-    background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-    overflow: hidden;
+  background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  overflow: hidden;
 }
 
 .sliderWrapper {
-    display: flex;
-    width: 500vw;
-    transition: all 1s ease-in-out;
+  display: flex;
+  width: 500vw;
+  transition: all 1s ease-in-out;
 }
 
 .sliderItem {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .sliderBg {
-    width: 750px;
-    height: 750px;
-    border-radius: 50%;
-    position: absolute;
+  width: 750px;
+  height: 750px;
+  border-radius: 50%;
+  position: absolute;
 }
 
 .sliderImg {
-    z-index: 1;
+  z-index: 1;
 }
 
 .sliderTitle {
-    position: absolute;
-    top: 10%;
-    right: 10%;
-    color: white;
-    font-size: 60px;
-    font-weight: 900;
-    text-align: center;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  color: white;
+  font-size: 60px;
+  font-weight: 900;
+  text-align: center;
 }
 
 .sliderPrice {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    color: white;
-    font-size: 60px;
-    font-weight: 300;
-    text-align: center;
-    border: 1px solid gray;
-    z-index: 1;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: white;
+  font-size: 60px;
+  font-weight: 300;
+  text-align: center;
+  border: 1px solid gray;
+  z-index: 1;
 }
 
 .buyButton {
-    position: absolute;
-    top: 50%;
-    right: 10%;
-    color: white;
-    font-size: 30px;
-    font-weight: 900;
-    border: 1px solid gray;
-    z-index: 1;
-    cursor: pointer;
-    background-color: black;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+  border: 1px solid gray;
+  z-index: 1;
+  cursor: pointer;
+  background-color: black;
 }
 
 .buyButton:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 .sliderItem:nth-child(1) .sliderBg {
-    background-color: #369e62;
+  background-color: #369e62;
 }
 
 .sliderItem:nth-child(2) .sliderBg {
-    background-color: purple;
+  background-color: purple;
 }
 
 .sliderItem:nth-child(3) .sliderBg {
-    background-color: rgb(252, 230, 105);
+  background-color: rgb(252, 230, 105);
 }
 
 .sliderItem:nth-child(4) .sliderBg {
-    background-color: rgb(226, 43, 177);
+  background-color: rgb(226, 43, 177);
 }
 
 .sliderItem:nth-child(5) .sliderBg {
-    background-color: cornflowerblue;
+  background-color: cornflowerblue;
 }
 
 .sliderItem:nth-child(1) .sliderPrice {
-    color: #369e62;
+  color: #369e62;
 }
 
 .sliderItem:nth-child(2) .sliderPrice {
-    color: purple;
+  color: purple;
 }
 
 .sliderItem:nth-child(3) .sliderPrice {
-    color: rgb(252, 230, 105);
+  color: rgb(252, 230, 105);
 }
 
 .sliderItem:nth-child(4) .sliderPrice {
-    color: rgb(226, 43, 177);
+  color: rgb(226, 43, 177);
 }
 
 .sliderItem:nth-child(5) .sliderPrice {
-    color: cornflowerblue;
+  color: cornflowerblue;
 }
 
 .features {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
 }
 
 .feature {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .featureIcon {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .featureTitle {
-    font-size: 20px;
-    font-weight: 600;
-    margin: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px;
 }
 
 .featureDesc {
-    color: gray;
-    width: 50%;
-    height: 100px;
+  color: gray;
+  width: 50%;
+  height: 100px;
 }
 
 .product {
-    height: 100vh;
-    background-color: whitesmoke;
-    position: relative;
-    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  height: 100vh;
+  background-color: whitesmoke;
+  position: relative;
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
 }
 
 .productImg {
-    width: 50%;
+  width: 50%;
 }
 
 .productDetails {
-    position: absolute;
-    top: 10%;
-    right: 0;
-    width: 40%;
-    padding: 50px;
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 40%;
+  padding: 50px;
+}
+
+.productTitle {
+  font-size: 57px;
+  font-weight: 900;
+}
+
+.productDesc {
+  font-size: 24px;
+  color: gray;
+}
+
+.colors,
+.sizes {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.color {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: black;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.color:last-child {
+  background-color: darkblue;
+}
+
+.size {
+  padding: 5px 20px;
+  border: 1px solid black;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.productButton {
+  float: right;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.productButton:hover {
+    background-color: white;
+    color: black;
 }
