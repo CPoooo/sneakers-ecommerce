@@ -1,6 +1,8 @@
 const wrapper = document.querySelector(".sliderWrapper");
 const menuItems = document.querySelectorAll(".menuItem");
 
+document.getElementById("year").textContent = new Date().getFullYear();
+
 const products = [
   {
     id: 1,
